@@ -16,14 +16,14 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
-### ios register
+### ios register_app
 ```
-fastlane ios register
+fastlane ios register_app
 ```
-Create a new app on AppStoreConnect
-### ios development_cert
+
+### ios get_dev_certs
 ```
-fastlane ios development_cert
+fastlane ios get_dev_certs
 ```
 
 

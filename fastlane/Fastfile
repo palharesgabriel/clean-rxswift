@@ -1,23 +1,14 @@
 default_platform(:ios)
 
-apple_id_email = "gaapalharesapple@gmail.com"
-
 platform :ios do
 
-  desc "Create a new app on AppStoreConnect"
-  lane :register do
-    produce(
-      username: apple_id_email,
-      app_identifier: "palhares.RickAppMorty",
-      app_name: "RickAppMorty"
-    )
+  lane :register_app do
+    produce(app_name: "RickAppMorty")
   end
 
-  lane :development_cert do
-    cert(
-      username: apple_id_email,
-      development: true
-    )
+  lane :get_dev_certs do
+    cert(development: true)
+    sigh(development: true)
   end
 
 end
