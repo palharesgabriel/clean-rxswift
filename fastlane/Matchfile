@@ -1,7 +1,8 @@
 git_url("https://github.com/palharesgabriel/mvvm-rxswift-certificates.git")
 
-storage_mode("git")
 
+storage_mode("git")
+force_for_new_devices(true)
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 
 # app_identifier(["tools.fastlane.app", "tools.fastlane.app2"])
