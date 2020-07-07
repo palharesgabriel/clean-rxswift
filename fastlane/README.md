@@ -21,6 +21,11 @@ or alternatively using `brew cask install fastlane`
 fastlane ios register
 ```
 Create a new app on AppStoreConnect
+### ios development_cert
+```
+fastlane ios development_cert
+```
+
 
 ----
 
