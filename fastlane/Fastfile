@@ -6,40 +6,43 @@ platform :ios do
     produce(app_name: "RickAppMorty")
   end
 
-  lane :get_dev_certs do
-    cert(development: true)
-    sigh(development: true)
-  end
-
-  desc "Sync team Code-Signing assets"
-  lane :sync_signing_assets do |options|
-    sync_device_info
-    selectedType = options[:type]
-    match(type: selectedType)
-  end
-
   desc "Build for App Store submission"
   lane :build_appstore do
     sync_signing_assets(type: "appstore")
     gym(
-      output_directory: "build_Appstore"
+      output_directory: "build_Appstore",
       export_method: "app-store"
     )
   end
 
   desc "Build for Ad Hoc submission"
-  lane :build_appstore do
+  lane :build_adhoc do
     sync_signing_assets(type: "addhoc")
     gym(
-      output_directory: "build_AdHoc"
+      output_directory: "build_AdHoc",
       export_method: "add-hoc"
     )
   end
 
+  lane :distribute_appstore do
+    build_appstore
+    pilot(changelog: "Version {lane_context[SharedValues::VERSION_NUMBER]}, Build {lane_context[SharedValues::BUILD_NUMBER]}")
+  end
+
   private_lane :sync_device_info do
-    register_devices(
-      devices_file: "fastlane/Devicefile"
-    )
+    register_devices(devices_file: "fastlane/Devicefile")
+  end
+
+  private_lane :get_dev_certs do
+    cert(development: true)
+    sigh(development: true)
+  end
+
+  desc "Sync team Code-Signing assets"
+  private_lane :sync_signing_assets do |options|
+    sync_device_info
+    selectedType = options[:type]
+    match(type: selectedType)
   end
 
 end
