@@ -11,15 +11,34 @@ platform :ios do
     sigh(development: true)
   end
 
-  lane :sync_all_development do
-    match(type: "development")
+  desc "Sync team Code-Signing assets"
+  lane :sync_signing_assets do |options|
+    sync_device_info
+    selectedType = options[:type]
+    match(type: selectedType)
   end
 
-  lane :sync_device_info do
+  desc "Build for App Store submission"
+  lane :build_appstore do
+    sync_signing_assets(type: "appstore")
+    gym(
+      output_directory: "build_Appstore"
+      export_method: "app-store"
+    )
+  end
+
+  desc "Build for Ad Hoc submission"
+  lane :build_appstore do
+    sync_signing_assets(type: "addhoc")
+    gym(
+      output_directory: "build_AdHoc"
+      export_method: "add-hoc"
+    )
+  end
+
+  private_lane :sync_device_info do
     register_devices(
-      devices: {
-        "Palhares iPhone" => "c34ba7b8415e1f7da32195985642a929b19151b5"
-      }
+      devices_file: "fastlane/Devicefile"
     )
   end
 
