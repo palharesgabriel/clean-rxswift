@@ -31,7 +31,7 @@ platform :ios do
 
     # git actions needed before build
     ensure_git_status_clean
-    ensure_git_branch(key: "master")
+    ensure_git_branch
     git_pull
 
     # sync_signing_assets(type: "appstore")
