@@ -34,7 +34,7 @@ platform :ios do
     ensure_git_branch
     git_pull
 
-    # sync_signing_assets(type: "appstore")
+    sync_signing_assets(type: "appstore")
     gym(
       output_directory: "build_Appstore",
       export_method: "app-store"
