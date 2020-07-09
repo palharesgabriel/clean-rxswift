@@ -2,16 +2,31 @@ default_platform(:ios)
 
 platform :ios do
 
+  desc "Create a new app on AppStoreConnect"
   lane :register_app do
     produce(app_name: "RickAppMorty")
   end
 
-  lane :release do
-    precheck
-    snapshot
+  desc "Submit a beta version to TestFlight"
+  lane :beta do
+    build_appstore
+    pilot(changelog: "Version {lane_context[SharedValues::VERSION_NUMBER]}, Build {lane_context[SharedValues::BUILD_NUMBER]}")
   end
 
-  desc "Build for App Store submission"
+  desc "Release a new version to AppStore with automated screenshots"
+  lane :release do
+    precheck
+    build_appstore
+    snapshot
+    frameit(gold: true)
+    deliver(
+      ipa: "./build_AppStore/RickAppMorty.ipa",
+      run_precheck_before_submit: false,
+      force: true
+    )
+  end
+
+  desc "Generate a build for App Store submission"
   lane :build_appstore do
     sync_signing_assets(type: "appstore")
     gym(
@@ -20,18 +35,13 @@ platform :ios do
     )
   end
 
-  desc "Build for Ad Hoc submission"
+  desc "Generate a build for Ad Hoc submission"
   lane :build_adhoc do
     sync_signing_assets(type: "addhoc")
     gym(
       output_directory: "build_AdHoc",
       export_method: "add-hoc"
     )
-  end
-
-  lane :distribute_appstore do
-    build_appstore
-    pilot(changelog: "Version {lane_context[SharedValues::VERSION_NUMBER]}, Build {lane_context[SharedValues::BUILD_NUMBER]}")
   end
 
   private_lane :sync_device_info do
