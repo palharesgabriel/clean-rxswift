@@ -28,6 +28,12 @@ platform :ios do
 
   desc "Generate a build for App Store submission"
   lane :build_appstore do
+
+    # git actions needed before build
+    ensure_git_status_clean
+    ensure_git_branch("master")
+    git_pull
+    
     sync_signing_assets(type: "appstore")
     gym(
       output_directory: "build_Appstore",

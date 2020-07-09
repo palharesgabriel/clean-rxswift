@@ -20,17 +20,27 @@ or alternatively using `brew install fastlane`
 ```
 fastlane ios register_app
 ```
-
-### ios get_dev_certs
+Create a new app on AppStoreConnect
+### ios beta
 ```
-fastlane ios get_dev_certs
+fastlane ios beta
 ```
-
-### ios sync_all_development
+Submit a beta version to TestFlight
+### ios release
 ```
-fastlane ios sync_all_development
+fastlane ios release
 ```
-sync team development assets
+Release a new version to AppStore with automated screenshots
+### ios build_appstore
+```
+fastlane ios build_appstore
+```
+Generate a build for App Store submission
+### ios build_adhoc
+```
+fastlane ios build_adhoc
+```
+Generate a build for Ad Hoc submission
 
 ----
 
