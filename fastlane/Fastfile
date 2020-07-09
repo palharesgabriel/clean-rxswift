@@ -70,7 +70,6 @@ platform :ios do
 
   desc "Sync team Code-Signing assets"
   private_lane :sync_signing_assets do |options|
-    sync_device_info
     selectedType = options[:type]
     match(type: selectedType)
   end
