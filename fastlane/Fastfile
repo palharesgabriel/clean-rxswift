@@ -35,10 +35,19 @@ platform :ios do
     git_pull
 
     # sync_signing_assets(type: "appstore")
-    # gym(
-    #   output_directory: "build_Appstore",
-    #   export_method: "app-store"
-    # )
+    gym(
+      output_directory: "build_Appstore",
+      export_method: "app-store"
+    )
+
+    # git actions needed after the build
+    add_git_tag(
+      grouping: "fastlane",
+      build_number: lane_context[SharedValues::BUILD_NUMBER]
+    )
+
+    push_to_git_remote
+
   end
 
   desc "Generate a build for Ad Hoc submission"
