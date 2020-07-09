@@ -6,6 +6,11 @@ platform :ios do
     produce(app_name: "RickAppMorty")
   end
 
+  lane :release do
+    precheck
+    snapshot
+  end
+
   desc "Build for App Store submission"
   lane :build_appstore do
     sync_signing_assets(type: "appstore")
