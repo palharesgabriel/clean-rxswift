@@ -1,0 +1,3 @@
+scheme("RickAppMortyTests")
+clean(true)
+open_report(true)

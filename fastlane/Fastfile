@@ -52,11 +52,25 @@ platform :ios do
 
   desc "Generate a build for Ad Hoc submission"
   lane :build_adhoc do
+
+    # git actions needed before build
+    ensure_git_status_clean
+    ensure_git_branch
+    git_pull
+
     sync_signing_assets(type: "addhoc")
+    scan
     gym(
       output_directory: "build_AdHoc",
       export_method: "add-hoc"
     )
+
+    # git actions needed after the build
+    add_git_tag(
+      grouping: "fastlane",
+      build_number: lane_context[SharedValues::BUILD_NUMBER]
+    )
+
   end
 
   private_lane :sync_device_info do
