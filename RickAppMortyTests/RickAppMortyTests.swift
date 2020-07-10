@@ -13,17 +13,17 @@ class RickAppMortyTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        
+
     }
-    
+
     func testFakeSuccess() {
         XCTAssert(true)
     }
-    
+
     func testFakeFailure() {
         XCTAssert(true)
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }

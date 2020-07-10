@@ -41,6 +41,11 @@ Generate a build for App Store submission
 fastlane ios build_adhoc
 ```
 Generate a build for Ad Hoc submission
+### ios lint
+```
+fastlane ios lint
+```
+
 
 ----
 

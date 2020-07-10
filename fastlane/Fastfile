@@ -34,6 +34,8 @@ platform :ios do
     ensure_git_branch
     git_pull
 
+    scan
+    lint
     sync_signing_assets(type: "appstore")
     gym(
       output_directory: "build_Appstore",
@@ -45,7 +47,6 @@ platform :ios do
       grouping: "fastlane",
       build_number: lane_context[SharedValues::BUILD_NUMBER]
     )
-
     push_to_git_remote
 
   end
@@ -58,8 +59,9 @@ platform :ios do
     ensure_git_branch
     git_pull
 
-    sync_signing_assets(type: "addhoc")
     scan
+    lint
+    sync_signing_assets(type: "addhoc")
     gym(
       output_directory: "build_AdHoc",
       export_method: "add-hoc"
@@ -70,7 +72,17 @@ platform :ios do
       grouping: "fastlane",
       build_number: lane_context[SharedValues::BUILD_NUMBER]
     )
+    push_to_git_remote
 
+  end
+
+  lane :lint do
+    swiftlint(
+      mode: :autocorrect,
+      config_file: ".swiftlint.yml",
+      output_file: "swiftlintOutput.txt",
+      ignore_exit_status: false
+    )
   end
 
   private_lane :sync_device_info do
