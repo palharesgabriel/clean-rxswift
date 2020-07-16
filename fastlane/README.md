@@ -25,7 +25,7 @@ Create a new app on AppStoreConnect
 ```
 fastlane ios commit_changes
 ```
-
+Send your changes to the remote in a very easy way, using message as a parameter like this: message:'My very First Commit'
 ### ios beta
 ```
 fastlane ios beta

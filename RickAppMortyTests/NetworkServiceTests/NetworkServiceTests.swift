@@ -13,13 +13,27 @@ class NetworkServiceTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        
+
     }
-    
-    func testURLValidity() {
-        
+
+    func testCharsURLValidity() {
+        let endpoint = CharacterTarget.fetchChars
+        let url = endpoint.baseURL + endpoint.path
+        XCTAssertEqual(url, "https://rickandmortyapi.com/api/character/")
     }
-    
+
+    func testAPICallSuccess() {
+
+    }
+
+    func testAPICallFailure() {
+
+    }
+
+    func testDecodeToModel() {
+
+    }
+
     override func tearDown() {
         super.tearDown()
     }
