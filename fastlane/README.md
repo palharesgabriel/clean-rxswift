@@ -21,6 +21,11 @@ or alternatively using `brew install fastlane`
 fastlane ios register_app
 ```
 Create a new app on AppStoreConnect
+### ios commit_changes
+```
+fastlane ios commit_changes
+```
+
 ### ios beta
 ```
 fastlane ios beta

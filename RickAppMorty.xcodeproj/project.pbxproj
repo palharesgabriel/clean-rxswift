@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1310056C71C0FD9307A834BC /* Pods_RickAppMorty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888C293A007DD93ED9B44FB9 /* Pods_RickAppMorty.framework */; };
 		AB666C1924B3AE590043D6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB666C1824B3AE590043D6E9 /* AppDelegate.swift */; };
 		AB666C1B24B3AE590043D6E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB666C1A24B3AE590043D6E9 /* SceneDelegate.swift */; };
 		AB666C2324B3AE590043D6E9 /* RickAppMorty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB666C2124B3AE590043D6E9 /* RickAppMorty.xcdatamodeld */; };
@@ -15,7 +16,9 @@
 		AB666C3324B3AE5E0043D6E9 /* RickAppMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB666C3224B3AE5E0043D6E9 /* RickAppMortyTests.swift */; };
 		AB72AEB324B7586600B993DB /* FastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72AEB224B7586600B993DB /* FastlaneSnapshots.swift */; };
 		AB72AEBB24B759AF00B993DB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB72AEBA24B759AF00B993DB /* SnapshotHelper.swift */; };
+		AB90A96824C087A5007CBBEC /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90A96724C087A5007CBBEC /* NetworkServiceTests.swift */; };
 		ABBD80B824B4C99E00B9F45C /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBD80B724B4C99E00B9F45C /* CharactersViewController.swift */; };
+		B8972B84F74DC36FDC723D08 /* Pods_RickAppMortyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A60F4A657BBC994FFD628AF /* Pods_RickAppMortyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		503D5AC704CCAA230A0E22CA /* Pods-RickAppMortyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAppMortyTests.release.xcconfig"; path = "Target Support Files/Pods-RickAppMortyTests/Pods-RickAppMortyTests.release.xcconfig"; sourceTree = "<group>"; };
+		6A60F4A657BBC994FFD628AF /* Pods_RickAppMortyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAppMortyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BAC0D4BAE505A9811222F31 /* Pods-RickAppMortyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAppMortyTests.debug.xcconfig"; path = "Target Support Files/Pods-RickAppMortyTests/Pods-RickAppMortyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		888C293A007DD93ED9B44FB9 /* Pods_RickAppMorty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickAppMorty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB666C1524B3AE590043D6E9 /* RickAppMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAppMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB666C1824B3AE590043D6E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB666C1A24B3AE590043D6E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +57,10 @@
 		AB72AEB224B7586600B993DB /* FastlaneSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneSnapshots.swift; sourceTree = "<group>"; };
 		AB72AEB424B7586600B993DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB72AEBA24B759AF00B993DB /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		AB90A96724C087A5007CBBEC /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		ABBD80B724B4C99E00B9F45C /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		AF7566D35E65E2E01FF25EEF /* Pods-RickAppMorty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAppMorty.release.xcconfig"; path = "Target Support Files/Pods-RickAppMorty/Pods-RickAppMorty.release.xcconfig"; sourceTree = "<group>"; };
+		C17FA16477962F905F9CF89D /* Pods-RickAppMorty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAppMorty.debug.xcconfig"; path = "Target Support Files/Pods-RickAppMorty/Pods-RickAppMorty.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1310056C71C0FD9307A834BC /* Pods_RickAppMorty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8972B84F74DC36FDC723D08 /* Pods_RickAppMortyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143D3929723A3594F82645DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C17FA16477962F905F9CF89D /* Pods-RickAppMorty.debug.xcconfig */,
+				AF7566D35E65E2E01FF25EEF /* Pods-RickAppMorty.release.xcconfig */,
+				7BAC0D4BAE505A9811222F31 /* Pods-RickAppMortyTests.debug.xcconfig */,
+				503D5AC704CCAA230A0E22CA /* Pods-RickAppMortyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F02F57083D06C6FACD92F35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				888C293A007DD93ED9B44FB9 /* Pods_RickAppMorty.framework */,
+				6A60F4A657BBC994FFD628AF /* Pods_RickAppMortyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB666C0C24B3AE590043D6E9 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +118,8 @@
 				AB666C3124B3AE5E0043D6E9 /* RickAppMortyTests */,
 				AB72AEB124B7586600B993DB /* FastlaneSnapshots */,
 				AB666C1624B3AE590043D6E9 /* Products */,
+				143D3929723A3594F82645DE /* Pods */,
+				6F02F57083D06C6FACD92F35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +152,7 @@
 		AB666C3124B3AE5E0043D6E9 /* RickAppMortyTests */ = {
 			isa = PBXGroup;
 			children = (
+				AB90A96624C084E8007CBBEC /* NetworkServiceTests */,
 				AB666C3224B3AE5E0043D6E9 /* RickAppMortyTests.swift */,
 				AB666C3424B3AE5E0043D6E9 /* Info.plist */,
 			);
@@ -131,6 +167,14 @@
 				AB72AEB424B7586600B993DB /* Info.plist */,
 			);
 			path = FastlaneSnapshots;
+			sourceTree = "<group>";
+		};
+		AB90A96624C084E8007CBBEC /* NetworkServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB90A96724C087A5007CBBEC /* NetworkServiceTests.swift */,
+			);
+			path = NetworkServiceTests;
 			sourceTree = "<group>";
 		};
 		ABBD80BA24B4CA6300B9F45C /* Model */ = {
@@ -178,10 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB666C3724B3AE5E0043D6E9 /* Build configuration list for PBXNativeTarget "RickAppMorty" */;
 			buildPhases = (
+				15EF4AEBB193837F8D80DB2C /* [CP] Check Pods Manifest.lock */,
 				AB666C1124B3AE590043D6E9 /* Sources */,
 				AB666C1224B3AE590043D6E9 /* Frameworks */,
 				AB666C1324B3AE590043D6E9 /* Resources */,
 				AB85097124B8DF5D0094F7BA /* ShellScript */,
+				89F2B033B4BED9BB781B3DC7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB666C3A24B3AE5E0043D6E9 /* Build configuration list for PBXNativeTarget "RickAppMortyTests" */;
 			buildPhases = (
+				6BFF05D086135E9F0070B289 /* [CP] Check Pods Manifest.lock */,
 				AB666C2A24B3AE5E0043D6E9 /* Sources */,
 				AB666C2B24B3AE5E0043D6E9 /* Frameworks */,
 				AB666C2C24B3AE5E0043D6E9 /* Resources */,
+				9517AAFAECC1537A299B8537 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +346,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15EF4AEBB193837F8D80DB2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAppMorty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BFF05D086135E9F0070B289 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAppMortyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89F2B033B4BED9BB781B3DC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAppMorty/Pods-RickAppMorty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAppMorty/Pods-RickAppMorty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickAppMorty/Pods-RickAppMorty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9517AAFAECC1537A299B8537 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAppMortyTests/Pods-RickAppMortyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickAppMortyTests/Pods-RickAppMortyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickAppMortyTests/Pods-RickAppMortyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AB85097124B8DF5D0094F7BA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB90A96824C087A5007CBBEC /* NetworkServiceTests.swift in Sources */,
 				AB666C3324B3AE5E0043D6E9 /* RickAppMortyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +616,7 @@
 		};
 		AB666C3824B3AE5E0043D6E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17FA16477962F905F9CF89D /* Pods-RickAppMorty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,6 +635,7 @@
 		};
 		AB666C3924B3AE5E0043D6E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7566D35E65E2E01FF25EEF /* Pods-RickAppMorty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +654,7 @@
 		};
 		AB666C3B24B3AE5E0043D6E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BAC0D4BAE505A9811222F31 /* Pods-RickAppMortyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +677,7 @@
 		};
 		AB666C3C24B3AE5E0043D6E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503D5AC704CCAA230A0E22CA /* Pods-RickAppMortyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

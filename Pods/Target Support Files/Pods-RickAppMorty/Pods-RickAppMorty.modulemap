@@ -1,0 +1,6 @@
+framework module Pods_RickAppMorty {
+  umbrella header "Pods-RickAppMorty-umbrella.h"
+
+  export *
+  module * { export * }
+}

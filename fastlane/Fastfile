@@ -7,6 +7,15 @@ platform :ios do
     produce(app_name: "RickAppMorty")
   end
 
+  lane :commit_changes do |options|
+    git_add
+    message = options[:message]
+    git_commit(message: message)
+    ensure_git_status_clean
+    git_pull
+    push_to_git_remote
+  end
+
   desc "Submit a beta version to TestFlight"
   lane :beta do
     build_appstore
