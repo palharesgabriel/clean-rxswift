@@ -1,5 +1,5 @@
 //
-//  CharacterRepository.swift
+//  CharacterStore.swift
 //  RickAppMorty
 //
 //  Created by Gabriel Palhares on 16/07/20.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol CharacterRepository {
-    func loadChars(completion: @escaping (Result<[Character], Error>) -> Void)
+protocol CharacterStore {
+    func loadChars(completion: @escaping (Result<CharactersResult, ServiceError>) -> Void)
 }

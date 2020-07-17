@@ -8,19 +8,19 @@
 
 import Foundation
 
-struct CharactersResult: Decodable {
+struct CharactersResult: Codable {
     let info: PaginationInfo
     let results: [Character]
 }
 
-struct PaginationInfo: Decodable {
+struct PaginationInfo: Codable {
     let count: Int
     let pages: Int
     let next: String?
     let prev: String?
 }
 
-struct Character: Decodable {
+struct Character: Codable {
     let id: Int
     let name: String
     let status: String
@@ -34,12 +34,12 @@ struct Character: Decodable {
     let created: String
 }
 
-struct CharacterOrigin: Decodable {
+struct CharacterOrigin: Codable {
     let name: String
     let url: String
 }
 
-struct CharacterLocation: Decodable {
+struct CharacterLocation: Codable {
     let name: String
     let url: String
 }

@@ -14,7 +14,11 @@ class CharactersViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .red
-
+        let service = NetworkService()
+        let worker = CharacterWorker(with: service)
+        worker.fetchChars { (result) in
+            debugPrint(result!)
+        }
     }
 
 }
