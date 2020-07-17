@@ -14,41 +14,44 @@ enum CharacterTarget {
 }
 
 extension CharacterTarget: TargetType {
-    
+
     var baseURL: URL {
         switch self {
         case .fetchChars:
             return NetworkConstants.URLs.baseURL
         }
     }
-    
+
     var path: String {
         switch self {
         case .fetchChars:
             return "character/"
         }
     }
-    
+
     var method: Moya.Method {
         switch self {
         case .fetchChars:
             return .get
         }
     }
-    
+
     var sampleData: Data {
         switch self {
         case .fetchChars:
-            return Data()
+            return [CharactersResult].encode(json: "chars")
         }
     }
-    
+
     var task: Task {
-        return Task()
+        switch self {
+        case .fetchChars:
+            return .requestPlain
+        }
     }
-    
-    var headers: [String : String]? {
-        return nil
+
+    var headers: [String: String]? {
+        return NetworkConstants.Headers.contentTypeApplicationJSON
     }
-    
+
 }

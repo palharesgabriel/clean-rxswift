@@ -17,4 +17,9 @@ struct NetworkConstants {
             return url
         }
     }
+
+    struct Headers {
+        static var contentTypeApplicationJSON = ["Content-Type": "application/json"]
+    }
+
 }

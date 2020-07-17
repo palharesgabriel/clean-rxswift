@@ -1,3 +1,14 @@
 included:
   - RickAppMorty
   - RickAppMortyTests
+
+line_length: 200
+
+identifier_name:
+  min_length: 
+    error: 4 
+  excluded: 
+    - id
+    - URL
+    - url
+    - GlobalAPIKey
